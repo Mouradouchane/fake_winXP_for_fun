@@ -1,0 +1,73 @@
+
+*{
+    margin : 0;
+    padding : 0;
+
+    --windows_button_color : #41cb41;
+
+    --taskbar_size : 6%;
+    --taskbar_color : #2361e1;
+    --taskbar_shadow : inset 8px 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    --global_inset_shadow : inset 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* desktop background */
+#desktop{
+    background-image: url("./graphics/background.jpg");
+    background-size: cover;
+}
+
+/* buttom task bar who contain 'windows_button' current running applications & stuff */
+#taskbar{
+    background-color : var(--taskbar_color);
+    position: fixed;
+    width: 100%;
+    height: var(--taskbar_size);
+    top: calc(100% - var(--taskbar_size));
+    box-shadow: var(--taskbar_shadow);
+}
+
+/* full windows menu button  */
+#windows_button{
+    position: relative;
+    height: 100%;
+    width: 18vh;
+    background-color : var(--windows_button_color);
+    border-radius: 0vh 2vh 2vh 0vh;
+}
+
+/* on hover event */
+#windows_button:hover{
+    transition: 0.2s;
+    box-shadow: var(--global_inset_shadow);
+    cursor:  pointer;
+}
+
+/* on click event */
+#windows_button:active{
+    transform: scale(0.98);
+}
+
+/* logo windows menu button */
+#windows_button img{
+    position: relative;
+    height: 80%;
+    top : 10%;
+    left: 5%;
+    float: left;
+}
+
+/* text windows menu button */
+#windows_button p{
+    position: relative;
+    height: 80%;
+    top : 10%;
+    left: 12%;
+    float: left;
+    color : white;
+    font-family: Microsoft Sans Serif;
+    font-weight: bold;
+    font-size: 4vh;
+}

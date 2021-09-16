@@ -44,13 +44,28 @@
     overflow: hidden;
 }
 
-/* window icon in title bar */
+/* window icons in title bar */
 .window .window_title_bar .icon{
     position: relative;
     width: calc(var(--window_title_bar_height) / 1.5);
+    top: 25%;
+}
+
+.window .window_title_bar .title_icon{
     float: left;
     margin-left : var(--window_title_bar_margin_between_elements);
-    top: 25%;
+}
+
+/* window title buttons minmize maximize close */
+.window .window_title_bar .window_title_button{
+    float : right;
+    cursor: pointer;
+    margin-right: var(--window_title_bar_margin_between_elements) ;
+}
+
+.window .window_title_bar .window_title_button:active{
+    transition: 0.2s;
+    transform: scale(0.90);
 }
 
 /* window title */

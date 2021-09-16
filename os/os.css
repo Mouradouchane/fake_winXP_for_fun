@@ -10,8 +10,10 @@
 
     --taskbar_size : 6%;
     --taskbar_color : #2361e1;
+    --taskbar_application_color : #3b84d8;
     --taskbar_shadow : inset 8px 0px 4px 4px rgba(0, 0, 0, 0.2);
-
+    --taskbar_application_height : 80%;
+    
     --global_inset_shadow : inset 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
     
 }
@@ -39,6 +41,7 @@
     width: 18vh;
     background-color : var(--windows_button_color);
     border-radius: 0vh 2vh 2vh 0vh;
+    float:left;
 }
 
 /* on hover event */
@@ -73,4 +76,41 @@
     font-family: var(--windows_global_font);
     font-weight: bold;
     font-size: 4vh;
+}
+
+
+/* application in taskbar */
+#taskbar .application_in_taskbar{
+    position : relative;
+    height: var(--taskbar_application_height);
+    float: left;
+    background : var(--taskbar_application_color);
+    border-radius: 0.5vh;
+    top: 10%;
+    margin-left: 4px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#taskbar .application_in_taskbar:active{
+    transform:scale(0.96);
+}
+
+#taskbar .application_in_taskbar .app_icon{
+    position: relative;
+    float:left;
+    height: 70%;
+    margin-left: 0.5vh;
+    top: 15%;
+}
+
+#taskbar .application_in_taskbar .app_name{
+    position: relative;
+    color: white;
+    font-family: var(--windows_global_font);
+    font-weight: bold;
+    float:left;
+    font-size: 2vh;
+    top: calc(50% - 1vh);
+    padding-right: 1vh;
 }

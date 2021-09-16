@@ -1,7 +1,10 @@
+@import url("./css/window.css");
 
 *{
     margin : 0;
     padding : 0;
+
+    --windows_global_font :  Microsoft Sans Serif;
 
     --windows_button_color : #41cb41;
 
@@ -67,7 +70,7 @@
     left: 12%;
     float: left;
     color : white;
-    font-family: Microsoft Sans Serif;
+    font-family: var(--windows_global_font);
     font-weight: bold;
     font-size: 4vh;
 }

@@ -1,0 +1,43 @@
+
+/* all cmd elements style */
+
+*{
+    --cmd_background_color : black;
+    --cmd_text_color : white;
+    --cmd_text_size : 16px; 
+}
+
+.full_container .cmd_area{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cmd_background_color);
+}
+
+/* cmd input output style */
+.full_container .cmd_area .cmd_text_content{
+    position: relative;
+    color : var(--cmd_text_color);
+    font-size: var(--cmd_text_size);
+    font-family: lucida console;
+    font-weight: bold;
+    width: 100%;
+}
+
+.full_container .cmd_area .cmd_input{
+    height: auto;
+    border : 1px solid rgb(252, 255, 49);
+}
+
+.full_container .cmd_area .cmd_input .cmd_user_path{
+    position: relative;
+    float:left;
+}
+
+.full_container .cmd_area .cmd_input input{
+    position: relative;
+    float:left;
+    border-style: none;
+    background: transparent;
+    color : white;
+}

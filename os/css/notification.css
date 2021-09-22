@@ -1,0 +1,73 @@
+*{
+    --notification_logo_size : 3vh;
+    --notification_raduis : 8px;
+    --notification_background_color : white;
+}
+
+#notification_container{
+    position: absolute;
+    /* border : 1px solid red; */
+    bottom : var(--taskbar_size);
+    right: 5%;
+    /* width: 25%; */
+}
+
+#notification_container #content{
+    position: relative;
+    border-radius: var(--notification_raduis);
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    background: var(--notification_background_color);
+}
+
+#notification_container #top_bar{
+    position: relative;
+    width: 100%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+#notification_container #content #type{
+    position: relative;
+    float :left;
+    padding : 1vh;
+    width : var(--notification_logo_size);
+}
+
+#notification_container #top_bar #close{
+    position: relative;
+    float:right;
+    padding : 1vh;
+    width : var(--notification_logo_size);
+    cursor: pointer;
+}
+
+#notification_container #top_bar #close:active{
+    transform: scale(0.97);
+}
+
+#notification_container #content #title{
+    position: relative;
+    font-size: 3vh;
+    font-weight: bold;
+    float :left;
+    padding : 1vh;
+}
+
+#notification_container #content #message{
+    position: relative;
+    font-size: 2.5vh;
+    padding: 1vh;
+}
+
+#notification_container #triangle_content{
+    position: relative;
+    float:right;
+    right: 8%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--notification_background_color);
+    width: 0;
+    height: 0;
+}

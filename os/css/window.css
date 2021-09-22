@@ -61,6 +61,7 @@
     float : right;
     cursor: pointer;
     margin-right: var(--window_title_bar_margin_between_elements) ;
+
 }
 
 .window .window_title_bar .window_title_button:active{
@@ -80,6 +81,14 @@
     float: left;
     margin-left : var(--window_title_bar_margin_between_elements);
     cursor: default;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 

@@ -12,7 +12,6 @@
     <!-- desktop background -->
 <body id=desktop>
     
-
     <!-- task bar in bottom -->
     <!-- buttom task bar who contain 'windows_button' current running applications & stuff -->
     <div id=taskbar>
@@ -25,12 +24,12 @@
 
         <!-- running application example -->
         <div class="application_in_taskbar">
-            <img class="app_icon" src="./graphics/folder_open.png" alt="app_icon" >
+            <img class="app_icon" src="./graphics/folder_open.png" draggable="false" alt="app_icon" >
             <p class="app_name"> normal window </p>
         </div>
 
         <div class="application_in_taskbar">
-            <img class="app_icon" src="./graphics/folder_open.png" alt="app_icon" >
+            <img class="app_icon" src="./graphics/folder_open.png" draggable="false" alt="app_icon" >
             <p class="app_name"> ddc window </p>
         </div>
     </div>
@@ -54,13 +53,13 @@
      <!-- "in blur" window example -->
      <div class="window in_blur_mod">
         <div class="window_title_bar">
-            <img class="icon title_icon" src="./graphics/folder_open.png" alt="icon">
+            <img class="icon title_icon" draggable="false" src="./graphics/folder_open.png" alt="icon">
             <p class=title> ddc window </p>
 
             <!-- window buttons -->
-            <img class="icon minimize_button window_title_button" src="./graphics/window_close.png" alt="close">
-            <img class="icon minimize_button window_title_button" src="./graphics/window_max.png" alt="maximize">
-            <img class="icon minimize_button window_title_button" src="./graphics/window_min.png" alt="minimize">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_min.png" alt="minimize">
     </div>
 
         <div class="full_container">
@@ -74,13 +73,13 @@
     <div class="window in_focus_mod" style="left:250px;top:80px" >
 
         <div class="window_title_bar">
-            <img class="icon title_icon" src="./graphics/cmd.png" alt="icon">
+            <img class="icon title_icon" draggable="false" src="./graphics/cmd.png" alt="icon">
             <p class=title> cmd - root </p>
 
             <!-- window buttons -->
-            <img class="icon minimize_button window_title_button" src="./graphics/window_close.png" alt="close">
-            <img class="icon minimize_button window_title_button" src="./graphics/window_max.png" alt="maximize">
-            <img class="icon minimize_button window_title_button" src="./graphics/window_min.png" alt="minimize">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_min.png" alt="minimize">
         </div>
 
         <div class="full_container">
@@ -90,7 +89,7 @@
                 <p class="cmd_text_content cmd_output"> os for fun :) 2021 </p>
 
                 <div class="cmd_text_content cmd_input">
-                    <p class="cmd_user_path">@root::></p>
+                    <p class="cmd_user_path">root::> </p>
                     <input type="text">
                 </div>
 

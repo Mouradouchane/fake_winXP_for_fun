@@ -11,7 +11,8 @@
 
     --taskbar_size : 6%;
     --taskbar_color : #2361e1;
-    --taskbar_application_color : #3b84d8;
+    --taskbar_application_color_in_blur : #3b84d8;
+    --taskbar_application_color_in_foucs : #7380f5;
     --taskbar_shadow : inset 8px 0px 4px 4px rgba(0, 0, 0, 0.2);
     --taskbar_application_height : 80%;
     
@@ -85,7 +86,7 @@
     position : relative;
     height: var(--taskbar_application_height);
     float: left;
-    background : var(--taskbar_application_color);
+    background : var(--taskbar_application_color_in_blur);
     border-radius: 0.5vh;
     top: 10%;
     margin-left: 4px;
@@ -93,8 +94,14 @@
     cursor: pointer;
 }
 
+/* in click event */
 #taskbar .application_in_taskbar:active{
     transform:scale(0.96);
+}
+
+/* in hover event */
+#taskbar .application_in_taskbar:hover{
+    background-color : var(--taskbar_application_color_in_foucs);
 }
 
 #taskbar .application_in_taskbar .app_icon{
@@ -114,4 +121,12 @@
     font-size: 2vh;
     top: calc(50% - 1vh);
     padding-right: 1vh;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

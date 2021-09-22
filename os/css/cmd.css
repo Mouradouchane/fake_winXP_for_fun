@@ -21,23 +21,40 @@
     font-size: var(--cmd_text_size);
     font-family: lucida console;
     font-weight: bold;
+    display: block;
     width: 100%;
 }
 
+/* cmd full input div*/
 .full_container .cmd_area .cmd_input{
-    height: auto;
-    border : 1px solid rgb(252, 255, 49);
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* border : 1px solid rgb(252, 255, 49); */
+    height: var(--cmd_text_size);
 }
 
+/* cmd input user name*/
 .full_container .cmd_area .cmd_input .cmd_user_path{
     position: relative;
     float:left;
 }
 
+/* cmd input  */
 .full_container .cmd_area .cmd_input input{
     position: relative;
     float:left;
     border-style: none;
     background: transparent;
     color : white;
+    font-size: var(--cmd_text_size);
+    font-family: lucida console;
+    font-weight: bold;
+    outline: none !important;
+    border-style: none;
+}
+
+.full_container .cmd_area .cmd_input input:foucs{
+    outline: none !important;
+    border-style: none;
 }

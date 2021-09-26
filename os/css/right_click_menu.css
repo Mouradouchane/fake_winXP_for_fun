@@ -1,0 +1,77 @@
+
+/*
+    here is style of defaul menu + all menu element  
+*/
+
+*{
+    --right_click_menu_color : #fff;
+    --right_click_element_hover_background_color : #316ac5;
+    --right_click_icon_size : 3vh;
+}
+
+/* full menu */
+#right_menu{
+    position: absolute;
+    left: 40px;
+    top:20px;
+    overflow: hidden;
+    background-color: var(--right_click_menu_color);
+    font-family: var(--windows_global_font);
+    cursor: pointer;
+    max-width: 40%;
+    min-width: 20%;
+    font-size: 2vh;
+}
+
+/* menu elements def style */
+#right_menu .right_menu_element{
+    position: relative;
+    margin : 0.5vh ;
+    padding : 0.5vh;
+    transition: 0.2s;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select:   none; /* Safari */
+     -khtml-user-select:   none; /* Konqueror HTML */
+       -moz-user-select:   none; /* Old versions of Firefox */
+        -ms-user-select:   none; /* Internet Explorer/Edge */
+            user-select:   none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+#right_menu .right_menu_element:hover{
+    background-color: var(--right_click_element_hover_background_color);
+    color : white;
+}
+
+/* menu elements icon */
+#right_menu .right_menu_element .icon{
+    position: relative;
+    width: var(--right_click_icon_size);
+    margin-right: 0.5vh;
+}
+
+/* menu elements is a sub menu */
+#right_menu .right_menu_element .subMenu{
+    position: relative;
+    width: 0; 
+    height: 0; 
+    border-top:    1vh solid transparent;
+    border-bottom: 1vh solid transparent;
+    border-left:   1vh solid rgb(0, 0, 0);
+    float:right;
+    left: 0.5vh;
+    top: 50%;
+    transform: translate(-50% , 0%);
+}
+
+/* menu elements text content */
+#right_menu .right_menu_element .content{
+    position: relative;
+}
+
+#right_menu .bold{
+    font-weight: bold;
+}
+

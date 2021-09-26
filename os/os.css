@@ -1,6 +1,7 @@
 @import url("./css/window.css");
 @import url("./css/cmd.css");
 @import url("./css/notification.css");
+@import url("./css/right_click_menu.css");
 
 *{
     margin : 0;

@@ -8,6 +8,7 @@
     --window_title_font_size : 100%;
     --window_title_bar_height : 30px;
     --window_title_bar_margin_between_elements : 2%;
+    --window_resize : 1vh;
 }
 
 /* basic window style */
@@ -101,4 +102,62 @@
     overflow: hidden;
     height: calc(98% - var(--window_title_bar_height));
     background : white;
+}
+
+
+
+/* all resize divs */
+.window .window_resize{
+    position: absolute;
+    /* border: 1px solid red; */
+}
+
+/* resize left & right */
+.window .lr{
+    top   : var(--window_resize);
+    width : var(--window_resize);
+    height: calc(100% - var(--window_resize)*2);
+    cursor: e-resize;
+}
+.window .right{
+    right: 0%;
+}
+
+/* resize top & down */
+.window .td{
+    left  : var(--window_resize);
+    height: var(--window_resize);
+    width : calc(100% - var(--window_resize)*2);
+    cursor: n-resize;
+}
+.window .top{
+    top : 0%;
+}
+
+
+/* resize all corners*/
+.window .cs{
+    height: var(--window_resize);
+    width : var(--window_resize);
+    cursor: ne-resize;
+}
+
+/* corners top-left */
+.window .tl{
+    top:0%;
+    left:0%;
+    cursor: nw-resize;
+}
+
+/* corners top-right */
+.window .tr{
+    top:0%;
+    right:0%;
+}
+
+/* corners top-right */
+.window .dr{
+    bottom:0%;
+    right:0%;
+    cursor: nw-resize;
 }

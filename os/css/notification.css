@@ -21,6 +21,7 @@
     background: var(--notification_background_color);
 }
 
+/* full notification */
 #notification_container #top_bar{
     position: relative;
     width: 100%;
@@ -28,6 +29,7 @@
     overflow: hidden;
 }
 
+/* message logo type */
 #notification_container #content #type{
     position: relative;
     float :left;
@@ -35,17 +37,23 @@
     width : var(--notification_logo_size);
 }
 
+
+
+/* close button in notification message */
 #notification_container #top_bar #close{
     position: relative;
     float:right;
     padding : 1vh;
     width : var(--notification_logo_size);
     cursor: pointer;
+    transition: 0.2s;
 }
 
 #notification_container #top_bar #close:active{
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
+
+
 
 #notification_container #content #title{
     position: relative;
@@ -61,6 +69,7 @@
     padding: 1vh;
 }
 
+/* little triagle in buttom of message for look linke xp */
 #notification_container #triangle_content{
     position: relative;
     float:right;

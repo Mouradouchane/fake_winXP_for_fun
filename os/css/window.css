@@ -6,8 +6,8 @@
     --window_in_blur_color : rgb(122, 153, 227);
     --window_raduis : 8px 8px 0px 0px;
     --window_title_font_size : 100%;
-    --window_title_bar_height : 30px;
-    --window_title_bar_margin_between_elements : 2%;
+    --window_title_bar_height : 5vh;
+    --window_title_bar_margin_between_elements : 1vh;
     --window_resize : 1vh;
 }
 
@@ -20,20 +20,12 @@
 
 /* window blue background in foucse mode*/
 .in_focus_mod{
-    top:200px;
-    left: 100px;
     background-color : var(--window_in_foucs_color);
-    width: 400px;
-    height: 300px;
 }
 
 /* window light blue background in blur mode*/
 .in_blur_mod{
-    top:100px;
-    left: 550px;
     background-color : var(--window_in_blur_color);
-    width: 500px;
-    height: 300px;
 }
 
 /* title bar in window */
@@ -52,6 +44,10 @@
     top: 25%;
 }
 
+.window .window_title_bar .in_max_size{
+    margin-left: none;
+}
+
 .window .window_title_bar .title_icon{
     float: left;
     margin-left : var(--window_title_bar_margin_between_elements);
@@ -60,9 +56,8 @@
 /* window title buttons minmize maximize close */
 .window .window_title_bar .window_title_button{
     float : right;
-    cursor: pointer;
+    cursor : pointer;
     margin-right: var(--window_title_bar_margin_between_elements) ;
-
 }
 
 .window .window_title_bar .window_title_button:active{
@@ -93,8 +88,8 @@
 }
 
 
-/* container white area where all elements in this window */
-.window .full_container{
+/* white container where all elements inside this container should be all window elements : folders,files... */
+.window, .full_container{
     position: relative;
     width: 98%;
     left: 1%;
@@ -103,7 +98,6 @@
     height: calc(98% - var(--window_title_bar_height));
     background : white;
 }
-
 
 
 /* all resize divs */

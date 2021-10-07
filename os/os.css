@@ -2,6 +2,7 @@
 @import url("./css/cmd.css");
 @import url("./css/notification.css");
 @import url("./css/right_click_menu.css");
+@import url("./css/window_max_size.css");
 
 *{
     margin : 0;

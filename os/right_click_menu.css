@@ -6,7 +6,7 @@
 *{
     --right_click_menu_color : #fff;
     --right_click_element_hover_background_color : #316ac5;
-    --right_click_icon_size : 2.5vh;
+    --right_click_icon_size : 3vh;
 }
 
 /* full menu */
@@ -19,6 +19,8 @@
     font-family: var(--windows_global_font);
     cursor: pointer;
     font-size: 2vh;
+    width: auto;
+    height: auto;
 }
 
 /* menu elements def style */
@@ -27,6 +29,7 @@
     margin : 0.5vh ;
     padding : 0.5vh;
     transition: 0.2s;
+    /*! width: 100%; */
     
     font-size: 2vh;
 
@@ -47,39 +50,40 @@
 }
 
 #right_menu .content:active{
-    transform: scale(0.98);
+    transform: scale(0.96);
 }
+
 
 
 /* menu elements icon */
 #right_menu .content .icon{
     position: relative;
     width: var(--right_click_icon_size);
+    border : 1px solid red;
+    /*! float:left; */
     display: inline-block;
 }
 
-/* elements text 'none-bold style' */
 #right_menu .content p{
-    top: -0.5vh;
+    /*! float:left; */
     display: inline-block;
+    margin-left: 1vh;
     position: relative;
-    left: 0.5vh;
 }
 
 /* menu elements is a sub menu */
 #right_menu .content .subMenu{
     position: relative;
-    width: 0; 
-    height: 0; 
+    /*! width: 0; */ 
+    /*! height: 0; */ 
     border-top:    1vh solid transparent;
     border-bottom: 1vh solid transparent;
     border-left:   1vh solid rgb(0, 0, 0);
-    left: 1vh;
+    /*! float:left; */
+    /*! left: 0.5vh; */
     display: inline-block;
-    padding-left: 1vh;
 }
 
-/* bold text */
 #right_menu .bold{
     font-weight: bold;
 }

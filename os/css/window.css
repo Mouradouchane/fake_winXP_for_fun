@@ -4,8 +4,8 @@
 *{
     --window_in_foucs_color : rgb(0, 85, 229);
     --window_in_blur_color : rgb(122, 153, 227);
-    --window_raduis : 8px 8px 0px 0px;
-    --window_title_font_size : 100%;
+    --window_raduis : 0.8vh  0.8vh  0vh 0vh;
+    --window_default_font_size : 2.5vh;
     --window_title_bar_height : 5vh;
     --window_title_bar_margin_between_elements : 1vh;
     --window_resize : 1vh;
@@ -71,7 +71,7 @@
     font-family: var(--windows_global_font);
     color : white;
     font-weight: bold;
-    font-size : var(--window_title_font_size);
+    font-size : var(--window_default_font_size);
     /* border:1px solid rgb(0, 0, 0); */
     top: 25%;
     float: left;
@@ -89,13 +89,13 @@
 
 
 /* white container where all elements inside this container should be all window elements : folders,files... */
-.window, .full_container{
+.window .full_container{
     position: relative;
-    width: 98%;
-    left: 1%;
-    top: 1%;
+    width: calc(100% - var(--window_resize) * 2);
+    height: calc(100% -  ( var(--window_resize) * 2 + var(--window_title_bar_height) ));
+    left: var(--window_resize) ;
+    top : var(--window_resize) ;
     overflow: hidden;
-    height: calc(98% - var(--window_title_bar_height));
     background : white;
 }
 
@@ -154,4 +154,19 @@
     bottom:0%;
     right:0%;
     cursor: nw-resize;
+}
+
+
+.win1{
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 30px;
+}
+
+.win2{
+    height: 60%;
+    width: 50%;
+    top: 20%;
+    left: 40%;
 }

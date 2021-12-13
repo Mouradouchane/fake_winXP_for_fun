@@ -4,7 +4,7 @@
 *{
     --cmd_background_color : black;
     --cmd_text_color : white;
-    --cmd_text_size : 16px; 
+    --cmd_text_size : 2.5vh; 
 }
 
 .full_container .cmd_area{
@@ -57,4 +57,11 @@
 .full_container .cmd_area .cmd_input input:foucs{
     outline: none !important;
     border-style: none;
+}
+
+.cmd1{
+    top: 30%;
+    left: 15%;
+    height: 400px;
+    width: 400px;
 }

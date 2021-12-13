@@ -1,37 +1,109 @@
 
-    <!-- notification message example -->
-    <div>
-        <div id="notification_container">
-            <div id="content">
-                <div id="top_bar">
-                    <img id="type" src="./graphics/os_messages/hint_msg.png" draggable="false" alt="message type">
-                    <p id="title"> we think you need update [new] ! </p>
-                    <img id="close" src="./graphics/os_messages/message_close.png" draggable="false" alt="close message">
+    
+
+    <!-- "in focus" window example -->
+    <div class="window in_focus_mod win1">
+        <!-- window full title bar -->
+        <div class="window_title_bar">
+            <img class="icon title_icon" src="./graphics/folder_open.png" alt="icon">
+            <p class=title> normal window </p>
+
+            <!-- window buttons -->
+            <img class="icon minimize_button window_title_button" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_min.png" alt="minimize">
+        </div>
+        
+        <!-- window container who contain all window elements -->
+        <div class="full_container"> </div>
+
+        <!-- window hidden divs for resize -->
+
+        <!-- left right -->
+        <div class="window_resize lr left"> </div>
+        <div class="window_resize lr right"> </div>
+
+        <!-- top down -->
+        <div class="window_resize td top"> </div>
+        <div class="window_resize td down"> </div>
+
+        <!-- corners  -->
+        <div class="window_resize cs tl"> </div>
+        <div class="window_resize cs tr"> </div>
+        <div class="window_resize cs dl"> </div>
+        <div class="window_resize cs dr"> </div>
+    </div>
+
+    <!-- "in blur" window example -->
+    <div class="window in_blur_mod win2">
+        <!-- window full title bar -->
+        <div class="window_title_bar">
+            <img class="icon title_icon" src="./graphics/folder_open.png" alt="icon">
+            <p class=title> ddc window </p>
+
+            <!-- window buttons -->
+            <img class="icon minimize_button window_title_button" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_min.png" alt="minimize">
+        </div>
+        
+        <!-- window container who contain all window elements -->
+        <div class="full_container"> </div>
+
+        <!-- window hidden divs for resize -->
+
+        <!-- left right -->
+        <div class="window_resize lr left"> </div>
+        <div class="window_resize lr right"> </div>
+
+        <!-- top down -->
+        <div class="window_resize td top"> </div>
+        <div class="window_resize td down"> </div>
+
+        <!-- corners  -->
+        <div class="window_resize cs tl"> </div>
+        <div class="window_resize cs tr"> </div>
+        <div class="window_resize cs dl"> </div>
+        <div class="window_resize cs dr"> </div>
+    </div>
+
+    
+
+    <!-- cmd example -->
+    <!-- "in focus" window example -->
+    <div class="window in_focus_mod cmd1" >
+
+        <div class="window_title_bar">
+            <img class="icon title_icon" draggable="false" src="./graphics/cmd.png" alt="icon">
+            <p class=title> cmd - root </p>
+
+            <!-- window buttons -->
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" draggable="false" src="./graphics/window_min.png" alt="minimize">
+        </div>
+
+        <div class="full_container">
+
+            <div class="cmd_area">
+                
+                <p class="cmd_text_content cmd_output"> os for fun :) 2021 </p>
+
+                <div class="cmd_text_content cmd_input">
+                    <p class="cmd_user_path">root::> </p>
+                    <input type="text">
                 </div>
-                    <p id="message"> 
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Eos incidunt veritatis at dolorem ipsa d
-                </p>
+
             </div>
-            <div id="triangle_content"></div>
+        </div>
+
+    </div>
+
+   
+        <div class="full_container">
+
         </div>
     </div>
 
 
-
-    <!-- right click menu example -->
-    <div id="right_menu">
-
-        <span class="content bold"> 
-            <img src="./graphics/os_rightClick/empty_icon.png" class="icon"> 
-            <p> Open </p> 
-        </span> 
-        
-        <span class="content"> 
-            <img src="./graphics/os_rightClick/run_as_admin.png" class="icon"> 
-            <p> Run As Admin </p> 
-            <div class="subMenu"></div>
-        </span> 
-    </div>
-
-
+    

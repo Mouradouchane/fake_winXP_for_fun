@@ -65,6 +65,38 @@
         </span> 
     </div>
 
+     <!-- "in focus" window example -->
+     <div class="window in_focus_mod win1">
+        <!-- window full title bar -->
+        <div class="window_title_bar">
+            <img class="icon title_icon" src="./graphics/folder_open.png" alt="icon">
+            <p class=title> normal window </p>
+
+            <!-- window buttons -->
+            <img class="icon minimize_button window_title_button" src="./graphics/window_close.png" alt="close">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_max.png" alt="maximize">
+            <img class="icon minimize_button window_title_button" src="./graphics/window_min.png" alt="minimize">
+        </div>
+        
+        <!-- window container who contain all window elements -->
+        <div class="full_container"> </div>
+
+        <!-- window hidden divs for resize -->
+
+        <!-- left right -->
+        <div class="window_resize lr left"> </div>
+        <div class="window_resize lr right"> </div>
+
+        <!-- top down -->
+        <div class="window_resize td top"> </div>
+        <div class="window_resize td down"> </div>
+
+        <!-- corners  -->
+        <div class="window_resize cs tl"> </div>
+        <div class="window_resize cs tr"> </div>
+        <div class="window_resize cs dl"> </div>
+        <div class="window_resize cs dr"> </div>
+    </div>
     
     <!-- notification message example -->
     <div>
@@ -83,7 +115,7 @@
             <div id="triangle_content"></div>
         </div>
     </div>
-
+    
     <script src="os.js" type="module"></script>
 </body>
 </html>

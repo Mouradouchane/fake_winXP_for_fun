@@ -29,19 +29,10 @@ export class window {
         this.focus = focus;
 
         this.dom = null;
-
-        // defualt css variable for all window elements
-        this.css  = {
-            window : {
-                bg_color_foucs   : "rgb(0, 85, 229)",
-                bg_color_nofoucs : "rgb(122, 153, 227)",
-                raduis : "0.8vh 0.8vh 0vh 0vh"
-            }
-            
-        } 
+        this.css = null;
 
         this.show = function(){
-            /*
+            
             // window element
             let window = document.createElement("div");
             // set window attrs
@@ -159,14 +150,18 @@ export class window {
 
                 this.dom = window;
                 document.body.append(window);
-                */
-        
+                
+            /*
             document.body.insertAdjacentHTML("beforebegin" , `
                 
-            <div class="window in_focus_mod" id=${this.id} style=${
-
-
-            }>
+            <div class="window in_focus_mod" id=${this.id} 
+            
+            style={
+                position: absolute,
+                border-radius: var(--window_raduis);
+                overflow: hidden;   
+            }
+            >
                
                 <div class="window_title_bar">
                     <img class="icon title_icon" src="./graphics/folder_open.png" alt="icon">
@@ -199,7 +194,7 @@ export class window {
             </div>
             
             `);
-        
+            */
         
         }
 
